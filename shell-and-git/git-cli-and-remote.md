@@ -1,12 +1,17 @@
-##Basic Git Workflow mit GitHub :github:
-Once
+## Basic Git Workflow mit GitHub :github:
+
+## Once
+
 In the shell
+
 git init # create a repo (once per project)
 
 # don't forget to add a .gitignore file
 
 git remote add origin <ssh-path-to-github>
-For each feature
+
+## For each feature
+
 In the shell
 git switch -c <branchname> # create a new branch
 git add <file> # add a file to the stage
@@ -24,7 +29,9 @@ git push -u origin <branchname> # push to GitHub
 - Optional: implement changes, push again to update pull request
 - Merge and delete the branch on GitHub
 - Continue in the shell
-  Again in the shell
-  git switch main
-  git pull # get the merged commits in your local main
-  git branch -d <oldbranchname> # delete the merged branch
+
+## Again in the shell
+
+git switch main
+git pull # get the merged commits in your local main
+git branch -d <oldbranchname> # delete the merged branch
